@@ -1,11 +1,14 @@
 package com.example.CRUD.spring.entities;
 
-import java.io.Serial;
+import javax.persistence.*;
 import java.io.Serializable;
 
+@Entity
+@Table(name = "users")
 public class User implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 1L;
+    private static final Long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
