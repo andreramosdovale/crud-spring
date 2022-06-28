@@ -1,7 +1,7 @@
-package com.example.CRUD.spring.resources;
+package com.example.project.resources;
 
-import com.example.CRUD.spring.entities.Order;
-import com.example.CRUD.spring.service.OrderService;
+import com.example.project.entities.Order;
+import com.example.project.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,10 +1,10 @@
-package com.example.CRUD.spring.config;
+package com.example.project.config;
 
-import com.example.CRUD.spring.entities.Order;
-import com.example.CRUD.spring.entities.User;
-import com.example.CRUD.spring.entities.enums.OrderStatus;
-import com.example.CRUD.spring.repositories.OrderRepository;
-import com.example.CRUD.spring.repositories.UserRepository;
+import com.example.project.entities.Order;
+import com.example.project.entities.User;
+import com.example.project.entities.enums.OrderStatus;
+import com.example.project.repositories.OrderRepository;
+import com.example.project.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;

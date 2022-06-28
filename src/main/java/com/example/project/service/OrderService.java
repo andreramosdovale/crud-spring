@@ -1,7 +1,7 @@
-package com.example.CRUD.spring.service;
+package com.example.project.service;
 
-import com.example.CRUD.spring.entities.Order;
-import com.example.CRUD.spring.repositories.OrderRepository;
+import com.example.project.entities.Order;
+import com.example.project.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
