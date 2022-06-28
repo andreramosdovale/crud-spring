@@ -1,4 +1,4 @@
-package com.example.CRUD.spring.config;
+package com.example.project.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.example.CRUD.spring"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(metaInfo());
@@ -33,7 +33,7 @@ public class SwaggerConfig {
                 "Terms of Service",
                 new Contact("André Ramos", "", ""),
                 "Apache License Version 2.0",
-                "https://www.apache.org/licesen.html", new ArrayList<>()
+                "https://www.apache.org/licenses/LICENSE-2.0", new ArrayList<>()
 
         );
     }

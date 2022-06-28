@@ -1,7 +1,7 @@
-package com.example.CRUD.spring.resources;
+package com.example.project.resources;
 
-import com.example.CRUD.spring.entities.User;
-import com.example.CRUD.spring.service.UserService;
+import com.example.project.service.UserService;
+import com.example.project.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

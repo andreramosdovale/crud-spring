@@ -1,4 +1,4 @@
-package com.example.CRUD.spring.entities;
+package com.example.project.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

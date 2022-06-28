@@ -1,6 +1,6 @@
-package com.example.CRUD.spring.entities;
+package com.example.project.entities;
 
-import com.example.CRUD.spring.entities.enums.OrderStatus;
+import com.example.project.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;

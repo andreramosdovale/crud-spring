@@ -1,6 +1,6 @@
-package com.example.CRUD.spring.repositories;
+package com.example.project.repositories;
 
-import com.example.CRUD.spring.entities.User;
+import com.example.project.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
