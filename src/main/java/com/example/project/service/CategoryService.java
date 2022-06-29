@@ -17,8 +17,12 @@ public class CategoryService {
         return repository.findAll();
     }
 
-    public Category findById(Long id) {
+    public Category findById(Long id) throws Exception {
         Optional<Category> category = repository.findById(id);
-        return category.get();
+
+        if (category.isPresent()) {
+            return category.get();
+        }
+        throw new Exception("Category not found!");
     }
 }
