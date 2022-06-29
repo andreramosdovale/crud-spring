@@ -19,7 +19,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.CRUD.spring"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.project"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(metaInfo());
@@ -27,8 +27,8 @@ public class SwaggerConfig {
 
     private ApiInfo metaInfo() {
         return new ApiInfo(
-                "Produtos API REST",
-                "API REST de cadastro de produtos.",
+                "API REST",
+                "API REST",
                 "1.0",
                 "Terms of Service",
                 new Contact("André Ramos", "", ""),
