@@ -17,12 +17,9 @@ public class UserService {
         return repository.findAll();
     }
 
-    public User findById(Long id) throws Exception {
+    public User findById(Long id) {
         Optional<User> user = repository.findById(id);
 
-        if (user.isPresent()) {
-            return user.get();
-        }
-        throw new Exception("User not found!");
+        return user.orElse(null);
     }
 }

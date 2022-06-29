@@ -17,12 +17,9 @@ public class ProductService {
         return repository.findAll();
     }
 
-    public Product findById(Long id) throws Exception {
+    public Product findById(Long id) {
         Optional<Product> product = repository.findById(id);
 
-        if (product.isPresent()) {
-            return product.get();
-        }
-        throw new Exception("Category not found!");
+        return product.orElse(null);
     }
 }

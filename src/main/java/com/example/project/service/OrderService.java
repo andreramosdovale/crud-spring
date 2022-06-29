@@ -17,12 +17,9 @@ public class OrderService {
         return repository.findAll();
     }
 
-    public Order findById(Long id) throws Exception {
+    public Order findById(Long id) {
         Optional<Order> order = repository.findById(id);
 
-        if (order.isPresent()) {
-            return order.get();
-        }
-        throw new Exception("Order not found!");
+        return order.orElse(null);
     }
 }
